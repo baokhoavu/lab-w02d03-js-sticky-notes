@@ -1,13 +1,24 @@
 <html>
   <head>
-    <title>Getting Sticky</title>
-    <!-- stylesheet link goes here -->
+    <title>Stickynote Project</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
   </head>
   <body>
-    <div id="main">
-       <h1>Getting Sticky</h1>
-       <!-- HTML code goes here -->
-    </div>
-   <!-- script link goees here -->
+    <h1>Getting Sticky</h1>
+    <p>
+      Current number of notes: <span id='counter'>0</span>
+    </p>
+    <button id='add_note' type='submit'>Add a New Note</button>
+    <ul id='chklist'>
+      <!--
+      <li class='stiki'>
+      <div contenteditable='true'></div>
+      <span class='remove'>X</span>
+      </li>
+      -->
+    </ul>
+    <script src='dom.js'></script>
   </body>
 </html>
