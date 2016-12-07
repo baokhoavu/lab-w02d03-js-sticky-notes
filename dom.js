@@ -1,7 +1,8 @@
+
 // for the counter
 var counter = document.getElementById('counter');
 
-varGetNumStickyNotes = function() {
+var getNumStickyNotes = function() {
   return document.querySelectorAll('li').length;
 }
 
@@ -23,23 +24,25 @@ var addStickyNote = function(event) {
   sticki.appendChild(edit);
   chklist.appendChild(sticki);
 
-  counter.innerHTML = getNumStickyNotes(); return
+  counter.innerHTML = getNumStickyNotes();
+  return 'something but this return value isnt even going to be used for anything';
 
-}
+  // span.addEventListener('click', removeStiki)
+};
 
-var killSwitch = f
+// var removeStiki = function(event) {
+//   getElementById('remove').remove;
+// }
 
-var willy = document.getElementById('add_note');
+var createSticky = document.getElementById('add_note');
 
-willy.addEventListener('click', addStickyNote);
-
-/* Start here */
-var counter = document.getElementById('counter');
+createSticky.addEventListener('click', addStickyNote);
 
 
-var tasksTodo = document.querySelectorAll('li').length;
+/* Page loaded, so we're here in the code. */
 
-counter.innerHTML=tasksTodo;
+
+
 
 
 
