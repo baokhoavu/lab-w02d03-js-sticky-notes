@@ -1,6 +1,10 @@
 // for the counter
 var counter = document.getElementById('counter');
 
+varGetNumStickyNotes = function() {
+  return document.querySelectorAll('li').length;
+}
+
 // creates a li
 var addStickyNote = function(event) {
   var chklist = document.getElementById('chklist');
@@ -18,6 +22,8 @@ var addStickyNote = function(event) {
   sticki.appendChild(span);
   sticki.appendChild(edit);
   chklist.appendChild(sticki);
+
+  counter.innerHTML = getNumStickyNotes(); return
 
 }
 
